@@ -1,6 +1,6 @@
 import express from 'express'
 import connectDB from './database/database'
-import routes from './routes'
+import routes from './routes/routes'
 
 const port = 3000
 const app = express()

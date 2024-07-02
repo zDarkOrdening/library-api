@@ -10,13 +10,11 @@ const bookSchema = new Schema({
     type: String,
     required: true,
     trim: true,
-
   },
   genre: {
     type: String,
     required: true,
     trim: true,
-
   },
   price: {
     type: Number,
@@ -26,7 +24,6 @@ const bookSchema = new Schema({
     type: Number,
     required: true,
   },
-
 }, {
   timestamps: true
 })

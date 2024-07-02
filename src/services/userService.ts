@@ -20,6 +20,16 @@ class UserService {
     const user = await User.findOne({ email })
     return user
   }
+
+  async deleteUser(email: string) {
+    const user = await User.findOneAndDelete({ email })
+    return user
+  }
+  // { new: true } returns the updated document
+  async updateUser(email: string, name: string) {
+    const user = await User.findOneAndUpdate({ email }, { name }, { new: true })
+    return user
+  }
 }
 
 export default UserService

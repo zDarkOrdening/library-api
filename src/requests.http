@@ -1,13 +1,22 @@
-POST http://localhost:3000/user
+POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
-  "name": "Elias",
-  "email": "eliass@alest.com.br",
+  "name": "Leonardo",
+  "email": "leonardo.lima@alest.com.br",
   "password": "123"
 }
 ###
-GET http://localhost:3000/users
+GET http://localhost:3000/api/users
 ###
-GET http://localhost:3000/user/leonardo.lima@alest.com.br
+GET http://localhost:3000/api/users/leonardo.lima@alest.com.br
+###
+DELETE http://localhost:3000/api/users/leonardo.lima@alest.com.br
+###
+PUT http://localhost:3000/api/users/leonardo.lima@alest.com.br
+Content-Type: application/json
 
+{
+  "name": "Leonardo"
+}
+###
