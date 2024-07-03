@@ -7,16 +7,28 @@ Content-Type: application/json
   "password": "123"
 }
 ###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "email": "leonardo.lima@alest.com.br",
+  "password": "123"
+}
+###
 GET http://localhost:3000/api/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ0ZWI0M2FlYWU3YTZhMjNhYjk4YiIsIm5hbWUiOiJMZW9uYXJkbyIsImVtYWlsIjoibGVvbmFyZG8ubGltYUBhbGVzdC5jb20uYnIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxOTk3MDA3OCwiZXhwIjoxNzE5OTczNjc4fQ.Y6XextpBsVOq_33F4jpWq2RuZHkYW8DiaS-NWSpr0Xo
 ###
 GET http://localhost:3000/api/users/leonardo.lima@alest.com.br
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ0ZWI0M2FlYWU3YTZhMjNhYjk4YiIsIm5hbWUiOiJMZW9uYXJkbyIsImVtYWlsIjoibGVvbmFyZG8ubGltYUBhbGVzdC5jb20uYnIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxOTk3MDA3OCwiZXhwIjoxNzE5OTczNjc4fQ.Y6XextpBsVOq_33F4jpWq2RuZHkYW8DiaS-NWSpr0Xo
 ###
 DELETE http://localhost:3000/api/users/leonardo.lima@alest.com.br
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ0ZWI0M2FlYWU3YTZhMjNhYjk4YiIsIm5hbWUiOiJMZW9uYXJkbyIsImVtYWlsIjoibGVvbmFyZG8ubGltYUBhbGVzdC5jb20uYnIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxOTk3MDA3OCwiZXhwIjoxNzE5OTczNjc4fQ.Y6XextpBsVOq_33F4jpWq2RuZHkYW8DiaS-NWSpr0Xo
 ###
 PUT http://localhost:3000/api/users/leonardo.lima@alest.com.br
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ0ZWI0M2FlYWU3YTZhMjNhYjk4YiIsIm5hbWUiOiJMZW9uYXJkbyIsImVtYWlsIjoibGVvbmFyZG8ubGltYUBhbGVzdC5jb20uYnIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxOTk3MDA3OCwiZXhwIjoxNzE5OTczNjc4fQ.Y6XextpBsVOq_33F4jpWq2RuZHkYW8DiaS-NWSpr0Xo
 Content-Type: application/json
 
 {
   "name": "Leonardo"
 }
-###
+

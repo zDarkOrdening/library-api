@@ -75,4 +75,17 @@ try {
   }
 }
 
-export default { createUser, findAllUsers, findUserByEmail, deleteUser, updateUser }
+async function loginUser(req: Request, res: Response) {
+  const { email, password } = req.body
+  try {
+    const token = await service.loginUser(email, password)
+    return res.status(200).json({ token })
+  } catch (error) {
+    if (error instanceof Error) {
+      return res.status(400).json({ message: error.message})
+    }
+  }
+  process.exit(1)
+}
+
+export default { createUser, findAllUsers, findUserByEmail, deleteUser, updateUser, loginUser }
